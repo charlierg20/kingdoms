@@ -33,6 +33,11 @@ function submit(response) {
   }
 }
 
+//Provides a link to reload the page
+function endGame() {
+  writeLine("Oh no! You ran out of something! <a href=\"index.html\">Start again?</a>", "red");
+}
+
 //Gets random index name from array which corresponds to a JSON elements that has details about a scenario.
 function newTurn(res) {
   //Check if function is called from buttons.
@@ -49,6 +54,11 @@ function newTurn(res) {
       resources += nresources;
       happiness += nhappiness;
       population += npopulation;
+    }
+    //Check if the player is backrupt
+    if (money <= 0 || resources <= 0 || population <= 0 || happiness <= 0) {
+      endGame();
+      return;
     }
   }
 
