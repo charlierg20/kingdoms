@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+html, body {
+  background-color: black;
+  color: rgb(0, 255, 0);
+  font-family: 'Source Code Pro', monospace;
+}
+
+#uinput {
+  background-color: black;
+  color:rgb(0, 255, 0);
+  border-width: 1px;
+  border-color: white;
+}
+
+#ubtn {
+  background-color: black;
+  color: rgb(0, 255, 0);
+}
